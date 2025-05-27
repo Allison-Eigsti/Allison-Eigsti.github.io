@@ -1,22 +1,28 @@
+:root{
+    --clr-primary: rgba(239, 254, 248, 0.439);
+    --clr-accent: #fef9ec;
+    --clr-neutral: #132c3e;
+}
+
 body {
-    font-family: Arial, sans-serif;
+font-family: Georgia, 'Times New Roman', Times, serif
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    color: #333;
-    background-color: #f4f4f4;
+    color: var(--clr-neutral);
+    background-color: var(--clr-primary);
 }
 .container {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
-    background: #fff;
+    background: var(--clr-primary);
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 h1,
 h2 {
-    color: #007bff;
+    color: var(--clr-neutral);
 }
 .header {
     text-align: center;
@@ -29,7 +35,7 @@ h2 {
     font-size: 14px;
 }
 .contact a {
-    color: #007bff;
+    color: var(--clr-neutral);
     text-decoration: none;
 }
 .section {
@@ -37,7 +43,7 @@ h2 {
 }
 .section h2 {
     margin-bottom: 10px;
-    border-bottom: 2px solid #007bff;
+    border-bottom: 2px solid var(--clr-neutral);
     padding-bottom: 5px;
 }
 .item {
@@ -46,7 +52,7 @@ h2 {
 .item h3 {
     margin: 0;
     font-size: 18px;
-    color: #555;
+    color: var(--clr-neutral);
 }
 .item p {
     margin: 5px 0;
@@ -58,8 +64,8 @@ h2 {
 }
 .skills ul li {
     display: inline-block;
-    background: #007bff;
-    color: #fff;
+    background: var(--clr-neutral);
+    color: var(--clr-accent);
     padding: 5px 10px;
     margin: 5px 5px 5px 0;
     border-radius: 4px;
