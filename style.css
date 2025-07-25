@@ -1,5 +1,7 @@
 :root{
     --clr-primary: rgba(239, 254, 248, 0.439);
+    --clr-primary-2: rgba(186, 216, 204, 0.439);
+    --clr-primary-3: rgba(154, 188, 175, 0.439);
     --clr-accent: #fef9ec;
     --clr-neutral: #132c3e;
 }
@@ -11,7 +13,10 @@ font-family: Georgia, 'Times New Roman', Times, serif;
     padding: 0;
     color: var(--clr-neutral);
     background-color: var(--clr-primary);
+    text-align: center;
 }
+
+/* Resume */
 .container {
     max-width: 800px;
     margin: 20px auto;
@@ -19,20 +24,25 @@ font-family: Georgia, 'Times New Roman', Times, serif;
     background: var(--clr-primary);
     border-radius: 8px;
 }
+
 h1,
 h2 {
     color: var(--clr-neutral);
 }
+
 .header {
     text-align: center;
 }
+
 .header h1 {
     margin: 10px 0;
 }
+
 .contact {
     margin: 10px 0;
     font-size: 14px;
 }
+
 .contact a {
     color: var(--clr-neutral);
     text-decoration: none;
@@ -40,27 +50,42 @@ h2 {
 .section {
     margin: 20px 0;
 }
+
 .section h2 {
     margin-bottom: 10px;
     border-bottom: 2px solid var(--clr-neutral);
     padding-bottom: 5px;
 }
+
+a {
+    text-decoration: none;
+    color: var(--clr-neutral);
+}
+
+.link-projects:hover{
+    border-bottom: 2px solid var(--clr-neutral);
+}
+
 .item {
     margin-bottom: 15px;
 }
+
 .item h3 {
     margin: 0;
     font-size: 18px;
     color: var(--clr-neutral);
 }
+
 .item p {
     margin: 5px 0;
     font-size: 14px;
 }
+
 .skills ul {
     list-style: none;
     padding: 0;
 }
+
 .skills ul li {
     display: inline-block;
     background: var(--clr-neutral);
@@ -68,4 +93,49 @@ h2 {
     padding: 5px 10px;
     margin: 5px 5px 5px 0;
     border-radius: 4px;
+}
+
+/* Projects */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2.5em;
+    margin-inline: 4em; 
+    color: var(--clr-neutral);
+}
+
+.project-container {
+    text-align: center;
+    border-radius: 4px;
+    padding: 1.5em;
+    background-color: var(--clr-primary-2);
+}
+
+.project-container:hover {
+    background-color: var(--clr-primary-3);
+    cursor: pointer;
+}
+
+.project-container p{
+    text-wrap: balance;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.home {
+    display: inline-block;
+    background-color: var(--clr-primary-2);
+    color: var(--clr-neutral);
+    padding: .5em 1em;
+    margin: 2em;
+}
+
+.home:hover {
+    border-bottom: none;
+    background-color: var(--clr-primary-3);
 }
