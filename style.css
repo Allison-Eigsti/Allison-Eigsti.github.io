@@ -13,7 +13,6 @@ font-family: Georgia, 'Times New Roman', Times, serif;
     padding: 0;
     color: var(--clr-neutral);
     background-color: var(--clr-primary);
-    text-align: center;
 }
 
 /* Resume */
@@ -96,6 +95,10 @@ a {
 }
 
 /* Projects */
+
+.projects {
+    text-align: center;
+}
 
 .grid-container {
     display: grid;
