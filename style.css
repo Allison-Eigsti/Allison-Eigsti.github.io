@@ -96,7 +96,7 @@ a {
 
 /* Projects */
 
-.projects {
+body.projects {
     text-align: center;
 }
 
@@ -115,7 +115,7 @@ a {
     background-color: var(--clr-primary-2);
 }
 
-.project-container:hover {
+.hover:hover {
     background-color: var(--clr-primary-3);
     cursor: pointer;
 }
@@ -136,9 +136,4 @@ img {
     color: var(--clr-neutral);
     padding: .5em 1em;
     margin: 2em;
-}
-
-.home:hover {
-    border-bottom: none;
-    background-color: var(--clr-primary-3);
 }
