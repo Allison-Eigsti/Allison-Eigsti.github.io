@@ -193,34 +193,6 @@ main {
     height: 50px;
 }
 
-.contact-info a,
-.projects a {
-    color: var(--clr-primary-400);
-    background-color: var(--clr-primary-200);
-    padding: .25rem .75rem;
-    border-radius: 10px;
-    text-decoration: none;
-    overflow-wrap: none;
-}
-
-.contact-info a:hover,
-.projects a:hover {
-    background-color: var(--clr-secondary-300);
-}
-
-.abt-me-button {
-    background-color: var(--clr-secondary-300);
-    color: var(--clr-neutral-900);
-    border-radius: 4px;
-    padding: .25em .75em;
-    display: inline-block;
-    max-width: 250px;
-}
-
-.abt-me-button:hover {
-    background-color: var(--clr-primary-200);
-}
-
 .work-experience .item > *{
     padding-block: .5rem;
 }
@@ -237,6 +209,30 @@ hr {
 
 .skills li {
     font-size: var(--fs-400);
+}
+
+/* Buttons */
+
+.contact-info a,
+.projects a,
+.about-me a {
+    color: var(--clr-primary-400);
+    background-color: var(--clr-primary-200);
+    padding: .25rem .75rem;
+    border-radius: 10px;
+    text-decoration: none;
+    overflow-wrap: none;
+}
+
+.contact-info a:hover,
+.projects a:hover,
+.about-me a:hover {
+    background-color: var(--clr-secondary-300);
+}
+
+.about-me a {
+    display: inline-block;
+    max-width: 250px;
 }
 
 .back-to-top {
