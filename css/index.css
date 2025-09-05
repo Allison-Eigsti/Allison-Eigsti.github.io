@@ -208,6 +208,10 @@ main {
     background-color: var(--clr-secondary-300);
 }
 
+.abt-me-button {
+    background-color: var(--clr-secondary-300);
+}
+
 .work-experience .item > *{
     padding-block: .5rem;
 }
