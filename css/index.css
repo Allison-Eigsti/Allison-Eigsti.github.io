@@ -210,6 +210,15 @@ main {
 
 .abt-me-button {
     background-color: var(--clr-secondary-300);
+    color: var(--clr-neutral-900);
+    border-radius: 4px;
+    padding: .25em .75em;
+    display: inline-block;
+    max-width: 250px;
+}
+
+.abt-me-button:hover {
+    background-color: var(--clr-primary-200);
 }
 
 .work-experience .item > *{
