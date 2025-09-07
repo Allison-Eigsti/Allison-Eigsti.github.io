@@ -334,12 +334,7 @@ body.projects {
         justify-items: center;
     }
 
-    .portrait {
-        order: 1;
-    }
-
     .about-me-summary {
-        order: 0;
         width: 90%;
         font-size: var(--fs-400);
     }
