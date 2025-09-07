@@ -268,7 +268,7 @@ body.projects {
 .project-container {
     text-align: center;
     border-radius: 1em;
-    padding: 1.5em;
+    padding: 2em 1.5em;
     border: 2px solid var(--clr-neutral-900);
     display: grid;
     row-gap: 2em;
@@ -284,8 +284,63 @@ body.projects {
     font-size: var(--fs-500);
 }
 
-img {
+.projects img {
     width: 100%;
     height: auto;
     display: block;
+}
+
+/* About Me Page */
+
+.about-me h1 {
+    text-align: center;
+    padding: .5em;
+}
+
+.about-me main{
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+    max-width: 1200px;
+    margin: 2em auto;
+}
+
+.about-me .image-container {
+    width: 40%;
+
+}
+
+.portrait {
+    border-radius: 50%;
+    overflow: hidden;
+    max-width: 100%;
+    height: auto;
+}
+
+.about-me-summary {
+    width: 50%;
+    font-size: var(--fs-500);
+    line-height: 1.5;
+}
+
+.about-me .home {
+    margin-left: 4em;
+}
+
+@media (max-width: 50em) {
+    .about-me main {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .portrait {
+        order: 1;
+    }
+
+    .about-me-summary {
+        order: 0;
+        width: 90%;
+        font-size: var(--fs-400);
+    }
 }
